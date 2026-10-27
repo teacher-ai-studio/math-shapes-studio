@@ -1,10 +1,61 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>算数教材</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f3f9ff">
+<meta name="color-scheme" content="light">
+<title>かたちの がくしゅう | 算数教材</title>
+<style>
+:root{color-scheme:light;font-family:system-ui,-apple-system,'Hiragino Kaku Gothic ProN','Yu Gothic',Meiryo,sans-serif;color:#183248;background:#f3f9ff}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;min-height:100dvh;background:#f3f9ff;color:#183248}
+main{max-width:1250px;margin:0 auto;padding:clamp(18px,4vw,42px) clamp(14px,3vw,34px) 34px;min-height:100vh;display:flex;flex-direction:column;justify-content:center}
+header{text-align:center;margin-bottom:clamp(22px,4vh,38px)}
+h1{margin:0 0 9px;font-size:clamp(32px,5vw,56px);font-weight:900;letter-spacing:.055em;line-height:1.3}
+.subtitle{font-size:clamp(19px,2.7vw,29px);font-weight:800;margin:0;color:#45627a}
+.shapes{margin:15px auto 0;display:flex;justify-content:center;gap:16px;align-items:center}
+.shapes span{display:block;width:32px;height:32px}.shapes .circle{border-radius:100%;background:#ed4949}.shapes .triangle{width:0;height:0;border-left:19px solid transparent;border-right:19px solid transparent;border-bottom:35px solid #efc537}.shapes .square{background:#358bd7}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(12px,2vw,25px)}
+a.card{display:flex;flex-direction:column;align-items:center;justify-content:space-between;gap:12px;min-height:340px;text-decoration:none;color:#17364f;background:#fff;border:4px solid #c3dff2;border-radius:28px;padding:clamp(16px,2vw,26px);box-shadow:0 8px 0 #d6e7f3;transition:transform .14s,box-shadow .14s,border-color .14s;touch-action:manipulation}
+a.card:hover,a.card:focus-visible{border-color:#438cc3;background:#f9fcff;outline:0;transform:translateY(-3px);box-shadow:0 11px 0 #d6e7f3}
+a.card:active{transform:translateY(5px);box-shadow:0 3px 0 #d6e7f3}
+.iconbox{width:100%;flex:1;min-height:155px;display:grid;place-items:center}.illustration{width:100%;max-width:220px;height:160px}
+.card-title{font-size:clamp(23px,2.55vw,34px);font-weight:900;text-align:center;line-height:1.35;margin:0}.card-desc{font-size:clamp(16px,1.5vw,20px);font-weight:750;text-align:center;line-height:1.5;margin:0;min-height:2.8em;color:#45627a}
+.start{display:block;align-self:stretch;text-align:center;background:#1679c7;color:#fff;padding:12px 9px;border-radius:16px;font-weight:900;font-size:clamp(20px,2vw,26px)}
+footer{text-align:center;margin-top:28px;font-size:15px;color:#526a7b;font-weight:700}
+@media(max-width:760px){main{justify-content:flex-start}.cards{grid-template-columns:1fr;max-width:540px;width:100%;margin:0 auto}a.card{min-height:155px;display:grid;grid-template-columns:115px 1fr;column-gap:15px;grid-template-rows:auto auto auto;align-items:center;padding:15px;border-radius:20px}.iconbox{grid-column:1;grid-row:1/4;min-height:110px}.illustration{height:110px}.card-title,.card-desc{text-align:left}.card-title{grid-column:2;grid-row:1;font-size:24px}.card-desc{grid-column:2;grid-row:2;font-size:15px;min-height:0}.start{grid-column:2;grid-row:3;font-size:18px;padding:8px}header{margin-bottom:22px}}
+@media(max-width:375px){a.card{grid-template-columns:85px 1fr;gap:8px}.illustration{height:95px}.card-title{font-size:21px}}
+@media(prefers-reduced-motion:reduce){a.card{transition:none}}
+</style>
 </head>
 <body>
-  <h1>算数教材</h1>
+<main>
+<header>
+<h1>かたちの がくしゅう</h1>
+<p class="subtitle">あそびたい ものを えらぼう！</p>
+<div class="shapes" aria-hidden="true"><span class="circle"></span><span class="triangle"></span><span class="square"></span></div>
+</header>
+<nav class="cards" aria-label="教材を選ぶ">
+<a class="card" href="https://teacher-ai-studio.github.io/dessert-roulette/" aria-label="シェフジタをひらく">
+<div class="iconbox"><svg class="illustration" viewBox="0 0 220 160" aria-hidden="true"><path d="M70 55C49 39 66 17 87 27c7-30 47-29 54-1 29-10 47 21 27 37H70Z" fill="#fff" stroke="#85a7ba" stroke-width="5" stroke-linejoin="round"/><path d="M75 59v38q35 17 90 0V59" fill="#fff" stroke="#85a7ba" stroke-width="5"/><circle cx="85" cy="124" r="19" fill="#e85050"/><polygon points="142,103 165,142 119,142" fill="#edc735"/><rect x="172" y="114" width="32" height="32" rx="3" fill="#418fd7"/></svg></div>
+<h2 class="card-title">シェフジタ</h2>
+<p class="card-desc">かたちで あそぼう！</p>
+<span class="start">ひらく</span>
+</a>
+<a class="card" href="./step1.html" aria-label="かたちにタッチ、ステップ1をひらく">
+<div class="iconbox"><svg class="illustration" viewBox="0 0 220 160" aria-hidden="true"><path d="M21 80q45-70 120-36" fill="none" stroke="#a9becb" stroke-width="5" stroke-dasharray="9 10" stroke-linecap="round"/><path d="m129 28 24 18-28 8" fill="none" stroke="#a9becb" stroke-width="5" stroke-linejoin="round"/><circle cx="96" cy="91" r="49" fill="#e85050"/><path d="M150 104l22 5 10-3 19 10-6 11-14-4-11 14-16-4-5-15-11 1Z" fill="#ffe1b9" stroke="#b98d67" stroke-width="3"/></svg></div>
+<h2 class="card-title">かたちに タッチ！</h2>
+<p class="card-desc">うごく かたちを さわろう</p>
+<span class="start">ひらく</span>
+</a>
+<a class="card" href="./step2.html" aria-label="かたちをさがそう、ステップ2をひらく">
+<div class="iconbox"><svg class="illustration" viewBox="0 0 220 160" aria-hidden="true"><circle cx="44" cy="38" r="26" fill="#e85050"/><polygon points="135,11 167,70 103,70" fill="#edc735"/><rect x="19" y="99" width="48" height="48" fill="#418fd7"/><circle cx="122" cy="117" r="34" fill="#e85050"/><rect x="178" y="90" width="30" height="30" fill="#418fd7"/><circle cx="120" cy="117" r="40" fill="none" stroke="#1f855c" stroke-width="6" stroke-dasharray="10 5"/></svg></div>
+<h2 class="card-title">かたちを さがそう！</h2>
+<p class="card-desc">おなじ かたちを みつけよう</p>
+<span class="start">ひらく</span>
+</a>
+</nav>
+<footer>せんせいと いっしょに たのしく あそぼう</footer>
+</main>
 </body>
 </html>
