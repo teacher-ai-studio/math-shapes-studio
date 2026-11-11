@@ -26,7 +26,7 @@ header{display:flex;justify-content:space-between;align-items:center;gap:8px;min
 #undo,#undoFailed{font-size:clamp(13px,1.7vw,17px);padding:7px 11px;opacity:.85}
 @media(max-width:650px){.toolbar{flex-wrap:wrap}.errorremain{font-size:18px;padding:5px 9px}#limits{gap:5px}}
 </style></head><body><main id="app">
-<header><h1>かたちを さがそう！</h1><button id="home" class="small hidden">さいしょに もどる</button><a class="global-home" href="./index.html" aria-label="3つの教材があるホーム画面に戻る">🏠 教材ホーム</a></header>
+<header><h1>かたちを さがそう！</h1><button id="home" class="small hidden">さいしょに もどる</button><a class="global-home" href="./home.html" aria-label="3つの教材があるホーム画面に戻る">🏠 教材ホーム</a></header>
 <section id="intro" class="screen"><div class="hero"><div class="figures" id="herofigures"></div><h2>かたちを さがそう！</h2><p>おなじ かたちを みつけてね！</p></div><button id="enter" class="action">スタート！</button></section>
 <section id="settings" class="screen hidden"><div class="card"><div class="label center">① さがす かたちを えらぼう！</div><div id="choices" class="choicegrid"></div></div><div class="card"><div class="label center">② かたちの かずを えらぼう！</div><div id="counts" class="countgrid"></div></div><div class="card"><div class="label center">③ まちがいの じょうげん（せんせいが きめる）</div><div id="limits" class="countgrid"></div><p class="subtle" style="text-align:center">まちがいが きめた かいすうに なったら こうたいします</p></div><button id="begin" class="action">ゲームを はじめる！</button></section>
 <section id="play" class="screen hidden"><div class="toolbar"><div id="goal" class="goal"></div><div id="remaining" class="remain"></div><div id="errors" class="errorremain"></div></div><div id="board" class="board" aria-label="図形を押して探すゲーム"></div><div class="gamefoot"><button id="undo" class="small">せんせい：まちがいを 1かい とりけす</button></div></section>
